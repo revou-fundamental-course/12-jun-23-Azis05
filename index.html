@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/index.js"></script>
+  </head>
+  <body>
+    <!-- header/navbar -->
+    <header>
+      <svg>
+        <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+          Temperature Conversion
+        </text>
+      </svg>
+    </header>
+
+    <!-- content -->
+    <main>
+      <section class="keterangan">
+        <p>
+          Masukan suhu derajat Celsius(℃) ke kotak dibawah, lalu klik tombol
+          Conversion untuk mendapatkan hasil konversi dalam bentuk Farenheit(℉).
+        </p>
+      </section>
+      <section class="inputSection">
+        <label for="inputField">Celsius(℃)</label>
+        <input
+          type="number"
+          id="inputCelsius"
+          placeholder="Enter Temperature in Celsius"
+        />
+        <div class="inputButtonSection">
+          <button onclick="convertCelsius()">Conversion</button>
+          <button onclick="resetField()">Reset</button>
+          <button onclick="convertFarenheit()">Reverse</button>
+        </div>
+      </section>
+
+      <section class="outputSection">
+        <label for="outputField">Farenheit(℉)</label>
+        <input id="outputFarenheit" type="number" disabled />
+        <label for="outputField">Cara Kalkulasi</label>
+        <textarea
+          name="text-area"
+          id="outputKalkulasi"
+          cols="10"
+          rows="3"
+          disabled
+        ></textarea>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="caraConversion">
+        <div>
+          <h3>Keterangan :</h3>
+          <span></span>
+        </div>
+        <h3>Cara Konversi Dari Celsius (℃) ke Farenheit(℉)</h3>
+        <p>
+          Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat
+          (°C) kali 9/5 tambah 32. <br />S(°F)-(S(°C) 9/5)+32 <br />
+          atau <br />
+          S(°F)=(S(°C)x1.8)+32
+        </p>
+      </div>
+      <div class="copyright">
+        <p>&copy; Abdurrohman Azis (RevoU)</p>
+      </div>
+    </footer>
+  </body>
+</html>
